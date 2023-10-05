@@ -8,7 +8,7 @@
 
 ---
 
-[About](#about) ✦ [Usage](#usage) ✦ [Future Developments](#future-developments) ✦ [Resources](#resources) ✦ [License](#license) ✦ [Contact](#contact)
+[About](#about) ✦ [Wireframe](#wireframe) ✦ [Future Developments](#future-developments) ✦ [Resources](#resources) ✦ [License](#license) ✦ [Contact](#contact)
 
 ---
 
@@ -16,7 +16,7 @@
 
 Personal Portfolio - created as part of She Codes Australia Plus Program, October 2023.
 
-## Usage
+## Wireframe
 
 ## Future Developements
 
