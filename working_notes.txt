@@ -1,3 +1,7 @@
 TODO:
 1. Light/Dark mode?
 2. 
+
+Questions:
+1. footer best practice
+2. active sheet- nbav font change
