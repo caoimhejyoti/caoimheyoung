@@ -18,9 +18,17 @@ Personal Portfolio - created as part of She Codes Australia Plus Program, Octobe
 
 ## Wireframe
 
+<!-- add wireframe images -->
+
 ## Future Developements
 
+<!-- future ideas? -->
+
 ## Resources
+
+https://webaim.org/resources/contrastchecker/
+
+<!-- add ressources as site is developed. -->
 
 ## License
 
