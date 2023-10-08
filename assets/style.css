@@ -1,20 +1,32 @@
 :root {
+  /* LAYOUT */
   --base-padding: 20px;
   --base-margin: 10px;
+
+  /* COLOURS */
+  /* CaoimheJyoti Brand Colours */
   --colour1: #01463c;
   --colour2: #ffb20f;
   --colour3: #af1b3f;
   --colour4: #fffffc;
+  --colour5: #06130f;
+  --colour6: #4a5551;
+  --colour7: #95a09c;
+  --colour8: #e7f4ee;
+  /* inherited colours */
+  --text: var(--colour4);
+
+  /* alternate company colours */
   --she-codes-purple: #8246ae;
   --she-codes-orange: #f9a426;
-  --black: #000000;
-  --white: #ffffff;
+
+  /* FONTS */
   --font-1: "Miltonian", cursive;
   --font-2: "Josefin Sans", sans-serif;
   --font-3: "Miltonian Tattoo", cursive;
 }
 
-/* Reset/base CSS code */
+/* Reset/base CSS code and style guide*/
 
 * {
   margin: 0;
@@ -28,6 +40,11 @@
 }
 
 body {
+  color: var(--text);
+  font-family: var(--font-2);
+  font-weight: 400;
+  line-height: 1.65;
+  font-size: 112.5%;
   background-color: var(--colour1);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -49,25 +66,38 @@ select {
   font: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--colour4);
-  font-family: var(--font-2);
-  overflow-wrap: break-word;
+h1 {
+  color: var(--colour2);
+  font-family: var(--font-3);
+  font-size: 3.052rem;
 }
 
-h1,
 h2 {
-  font-family: var(--font-1);
+  font-family: var(--font-2);
+  font-size: 2.441rem;
+}
+h3 {
+  color: var(--color5);
+  font-size: 1.953rem;
+}
+h4 {
+  color: var(--color3);
+  font-size: 1.563rem;
+}
+h5 {
+  color: var(--color3);
+  font-size: 1.25rem;
+}
+h6 {
+  color: var(--color3);
+  font-size: 0.8rem;
+}
+.text_small {
+  font-size: 0.512rem;
 }
 
 a {
-  font-family: var(--font-1);
+  font-family: var(--font-3);
 }
 
 .burger {
@@ -155,7 +185,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: var(--colour1);
-  color: var(--white);
+  color: var(--color8);
 }
 
 #footer-logo {
