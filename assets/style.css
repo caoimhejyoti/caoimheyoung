@@ -5,16 +5,20 @@
 
   /* COLOURS */
   /* CaoimheJyoti Brand Colours */
+  /* Highlights */
   --colour1: #01463c;
-  --colour2: #ffb20f;
-  --colour3: #af1b3f;
-  --colour4: #fffffc;
-  --colour5: #06130f;
-  --colour6: #4a5551;
-  --colour7: #95a09c;
-  --colour8: #e7f4ee;
+  --colour2: #af1b3f;
+  --colour3: #ffcc7a;
+  --colour4: #9baeb2;
+  --colour5: #fffffc;
+  /* Neutrals */
+  --colour11: #06130f;
+  --colour12: #4a5551;
+  --colour13: #5c6763;
+  --colour14: #95a09c;
+  --colour15: #e7f4ee;
   /* inherited colours */
-  --text: var(--colour4);
+  --text: var(--colour15);
 
   /* alternate company colours */
   --she-codes-purple: #8246ae;
@@ -67,7 +71,7 @@ select {
 }
 
 h1 {
-  color: var(--colour2);
+  color: var(--colour3);
   font-family: var(--font-3);
   font-size: 3.052rem;
 }
@@ -112,6 +116,39 @@ a {
   display: block;
   background-color: var(--colour2);
   -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button,
+.button {
+  background-color: var(--colour3);
+  color: var(--colour1);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  font-family: var(--font-2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-danger {
+  background-color: var(--colour2);
+  color: var(--colour5);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  font-family: var(--font-2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button-success {
+  background-color: var(--colour1);
+  color: var(--colour5);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  font-family: var(--font-2);
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
