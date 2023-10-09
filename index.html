@@ -46,7 +46,7 @@
       <!-- About Me -->
       <section id="about">
         <!-- headshot -->
-        <img src="assets/images/profile_images/IMG_4007.png" />
+        <img src="assets/images/profile_images/IMG_4007.png" ari />
         <div>
           <h2>Who is Caoimhe?</h2>
           <p>
@@ -96,37 +96,64 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact"></section>
+      <section id="contact">
+        <h2>Get in touch</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, omnis
+          dignissimos! Ducimus iure voluptate exercitationem. Quam placeat harum
+          doloribus aut suscipit laboriosam eum fugit ipsa rem. Aliquam aut
+          possimus vel?
+        </p>
+        <form>
+          <label for="fname">First Name <span class="mandatory">*</span></label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            required
+            aria-required="true"
+          />
+          <label for="sname">Surname <span class="mandatory">*</span></label>
+          <input
+            type="text"
+            id="sname"
+            name="sname"
+            required
+            aria-required="true"
+          />
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" />
+          <label for="email">Email <span class="mandatory">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+          />
+          <label for="message">Message <span class="mandatory">*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            aria-required="true"
+          ></textarea>
+          <button class="button-success" type="button">Submit</button>
+        </form>
+      </section>
     </main>
     <!-- Footer -->
     <footer>
-      <a
-        href="https://caoimhejyoti.github.io/caoimhejyoti-react/"
-        target="_blank"
-      >
-        <img id="footer-logo" src="/assets/images/logo_white_border.png" />
-      </a>
+      <!-- <img id="footer-logo" src="/assets/images/logo_white_border.png" /> -->
+
       <!-- TODO: Check best practice with this p/span/a format. -->
-      <p>
-        ©
-        <span>
-          <a
-            href="https://caoimhejyoti.github.io/caoimhejyoti-react/"
-            target="_blank"
-            >Caoimhe Jyoti</a
-          >
-        </span>
-        ·
-        <span>
-          <a href="https://github.com/caoimhejyoti" target="_blank">Github</a>
-        </span>
-        ·
-        <span>
-          <a href="https://www.linkedin.com/in/caoimhe-young/" target="_blank"
-            >LinkedIn</a
-          >
-        </span>
-      </p>
+      <p>©Caoimhe Jyoti</p>
+      <section id="footer_links">
+        <a href="https://github.com/caoimhejyoti" target="_blank"> Github </a>
+        <a href="https://www.linkedin.com/in/caoimhe-young/" target="_blank">
+          LinkedIn
+        </a>
+      </section>
     </footer>
   </body>
 </html>
