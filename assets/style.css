@@ -1,9 +1,9 @@
 :root {
-  /* LAYOUT */
+  /* ------------------LAYOUT------------------ */
   --base-padding: 20px;
   --base-margin: 10px;
 
-  /* COLOURS */
+  /* ------------------COLOURS------------------ */
   /* CaoimheJyoti Brand Colours */
   /* Highlights */
   --colour1: #01463c;
@@ -24,13 +24,14 @@
   --she-codes-purple: #8246ae;
   --she-codes-orange: #f9a426;
 
-  /* FONTS */
+  /* ------------------FONTS------------------ */
   --font-1: "Rock Salt", cursive;
   --font-2: "Josefin Sans", sans-serif;
   --font-3: "Rock Salt", cursive;
 }
 
-/* Reset/base CSS code and style guide*/
+/* ------------------Reset/base CSS code and style guide------------------*/
+/* TODO: look at tidying up reset code */
 
 * {
   margin: 0;
@@ -104,6 +105,7 @@ a {
   font-family: var(--font-3);
 }
 
+/* ------------------Button Styling------------------ */
 button,
 .button {
   background-color: var(--colour3);
@@ -137,10 +139,6 @@ button,
   transition: all 0.3s ease-in-out;
 }
 
-.mandatory {
-  color: var(--colour2);
-}
-
 /* ------------------Header------------------ */
 
 .openmenu {
@@ -148,7 +146,6 @@ button,
 }
 
 header {
-  /* height: 10vh; */
   width: 100%;
   /* TODO: needs to be fixed when scrolled but not at top... */
   /* position: fixed; */
@@ -169,14 +166,12 @@ header a {
 header a:active {
   color: var(--colour2);
   font-weight: bold;
-  /* font-family: var(--font-3);  */
   text-decoration: none;
 }
 
 #logo {
   height: 8vh;
   margin: 0.6rem;
-  display: inline-block;
 }
 
 nav {
@@ -186,23 +181,8 @@ nav {
 }
 
 nav a {
-  padding: var(--base-margin);
+  padding: var(--base-padding);
 }
-
-/* .hamburger-lines {
-  margin: 1.6rem;
-  display: none;
-} */
-
-/* .bar {
-  margin: 5px auto;
-  width: 25px;
-  height: 4px;
-  display: block;
-  background-color: var(--colour2);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-} */
 
 /* ------------------Main------------------ */
 
@@ -212,6 +192,7 @@ nav a {
 
 /* ------------------Contact------------------ */
 #contact {
+  margin-bottom: 1.6rem;
   padding: 0.6rem;
   display: flex;
   flex-direction: column;
@@ -225,8 +206,6 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
   width: 90%;
-  /* justify-content: space-between; */
-  /* align-items: center; */
   padding: 1.6rem;
 }
 
@@ -238,21 +217,32 @@ textarea {
   margin-bottom: 0.6rem;
 }
 
+.mandatory {
+  color: var(--colour2);
+}
+
+/* TODO: look at positioning - needs to be centered.  */
+form #formbtn {
+  align-content: center;
+  width: 50%;
+}
+
 /* ------------------Footer------------------ */
 footer {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--colour1);
-  color: var(--color8);
+  color: var(--colour1);
+  background-color: var(--colour5);
 }
 
 #footer-logo {
   height: 5vh;
   display: inline-block;
 }
+
 #footer_links {
   display: flex;
   flex-direction: row;
@@ -261,7 +251,7 @@ footer {
 
 footer a {
   padding: 0.6rem;
-  color: var(--colour5);
+  color: var(--colour1);
   font-family: var(--font-);
   text-decoration: none;
 }
@@ -280,7 +270,6 @@ footer a:hover {
   .checkbox {
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
   }
   .openmenu {
     display: block;
@@ -359,19 +348,6 @@ footer a:hover {
     background: var(--colour1);
   }
   /*  ------------- end of toggle menu ------------- */
-
-  /* .burger {
-    display: block;
-    float: right;
-  } */
-  /* .column {
-    width: 100%;
-    display: block;
-  } */
-  /* .contact-form {
-    padding: 1.6rem;
-    width: 75%;
-  } */
 
   footer a {
     display: flex;
