@@ -195,13 +195,14 @@ nav a {
 
 /* ------------------Contact------------------ */
 #contact {
-  margin-bottom: 1.6rem;
+  margin: 0 1.6rem 1.6rem 1.6rem;
   padding: 0.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--colour3);
   color: var(--colour1);
+  border-radius: 0.4rem;
 }
 
 form {
@@ -239,8 +240,8 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--colour5);
-  color: var(--colour1);
+  background-color: var(--colour11);
+  color: var(--colour15);
 }
 
 #footer-logo {
@@ -256,7 +257,7 @@ footer {
 
 footer a {
   padding: 0.6rem;
-  color: var(--colour1);
+  color: var(--colour15);
   font-family: var(--font-);
   text-decoration: none;
 }
