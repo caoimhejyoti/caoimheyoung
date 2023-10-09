@@ -45,12 +45,12 @@
 }
 
 body {
+  background-color: var(--colour1);
   color: var(--text);
   font-family: var(--font-2);
+  font-size: 112.5%;
   font-weight: 400;
   line-height: 1.65;
-  font-size: 112.5%;
-  background-color: var(--colour1);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -60,8 +60,8 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
   max-width: 100%;
+  display: block;
 }
 
 input,
@@ -108,43 +108,38 @@ a {
 /* ------------------Button Styling------------------ */
 button,
 .button {
+  padding: 0.8rem;
   background-color: var(--colour3);
   color: var(--colour1);
   border: none;
   border-radius: 0.4rem;
-  padding: 0.8rem;
   font-family: var(--font-2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .button-danger {
+  padding: 0.8rem;
   background-color: var(--colour2);
   color: var(--colour5);
   border: none;
   border-radius: 0.4rem;
-  padding: 0.8rem;
   font-family: var(--font-2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .button-success {
+  padding: 0.8rem;
   background-color: var(--colour1);
   color: var(--colour5);
   border: none;
   border-radius: 0.4rem;
-  padding: 0.8rem;
   font-family: var(--font-2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 /* ------------------Header------------------ */
-
-.openmenu {
-  display: none;
-}
-
 header {
   width: 100%;
   /* TODO: needs to be fixed when scrolled but not at top... */
@@ -170,25 +165,33 @@ header a:active {
 }
 
 #logo {
-  height: 8vh;
   margin: 0.6rem;
+  height: 8vh;
+}
+
+.openmenu {
+  display: none;
 }
 
 nav {
   display: flex;
-  float: right;
   align-items: center;
+  float: right;
 }
 
 nav a {
   padding: var(--base-padding);
 }
+/* ------------------end of header------------------ */
 
 /* ------------------Main------------------ */
-
 /* ------------------About------------------ */
 
-/* ------------------Work------------------ */
+/* ------------------end of about------------------ */
+
+/* ------------------Projects------------------ */
+
+/* ------------------end of projects------------------ */
 
 /* ------------------Contact------------------ */
 #contact {
@@ -197,16 +200,16 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--colour1);
   background-color: var(--colour3);
+  color: var(--colour1);
 }
 
 form {
+  padding: 1.6rem;
+  width: 90%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 90%;
-  padding: 1.6rem;
 }
 
 input {
@@ -223,9 +226,11 @@ textarea {
 
 /* TODO: look at positioning - needs to be centered.  */
 form #formbtn {
-  align-content: center;
   width: 50%;
+  align-content: center;
 }
+/* ------------------end of contact------------------ */
+/* ------------------end of main------------------ */
 
 /* ------------------Footer------------------ */
 footer {
@@ -234,8 +239,8 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: var(--colour1);
   background-color: var(--colour5);
+  color: var(--colour1);
 }
 
 #footer-logo {
@@ -259,6 +264,7 @@ footer a {
 footer a:hover {
   color: var(--colour3);
 }
+/* ------------------End of footer------------------ */
 
 /* ------------------Media Queries------------------ */
 @media screen and (max-width: 830px) {
@@ -273,48 +279,46 @@ footer a:hover {
   }
   .openmenu {
     display: block;
-    height: 32px;
     width: 32px;
+    height: 32px;
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 5;
     cursor: pointer;
     /* -- hides checkbox -- */
-    opacity: 0;
     margin: 10px;
+    opacity: 0;
   }
 
   /* -- opens menu -- */
-
   .checkbox input[type="checkbox"]:checked ~ .menu {
+    margin: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin: 20px;
   }
 
   .checkbox .hamburger-lines {
-    padding: 0;
     margin: 10px;
-    display: block;
+    padding: 0;
     height: 26px;
     width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .checkbox .hamburger-lines .line {
-    display: block;
     height: 4px;
     width: 100%;
-    border-radius: 10px;
+    display: block;
     background: var(--colour1);
+    border-radius: 10px;
   }
 
   /* -- transform hamburger lines -- */
@@ -334,21 +338,22 @@ footer a:hover {
 
   /* -- change hamburger when checked -- */
   .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-    transform: rotate(45deg);
     background: var(--colour1);
+    transform: rotate(45deg);
   }
 
   .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-    transform: scaleY(0);
     background: var(--colour1);
+    transform: scaleY(0);
   }
 
   .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-    transform: rotate(-45deg);
     background: var(--colour1);
+    transform: rotate(-45deg);
   }
   /*  ------------- end of toggle menu ------------- */
 
+  /*  ------------- Footer ------------- */
   footer a {
     display: flex;
     flex-direction: row;
