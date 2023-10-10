@@ -27,7 +27,9 @@
   /* ------------------FONTS------------------ */
   --font-1: "Rock Salt", cursive;
   --font-2: "Josefin Sans", sans-serif;
-  --font-3: "Rock Salt", cursive;
+  --font-3: "Playfair Display", serif;
+
+  --h1: 5.441rem;
 }
 
 /* ------------------Reset/base CSS code and style guide------------------*/
@@ -185,6 +187,11 @@ nav a {
 /* ------------------end of header------------------ */
 
 /* ------------------Main------------------ */
+/* ------------------Hero------------------ */
+#landing-hero {
+  background-color: var(--colour1);
+  background-image: url("assets/images/portfolio_backgrnd.png");
+}
 /* ------------------About------------------ */
 
 /* ------------------end of about------------------ */
@@ -215,10 +222,20 @@ form {
 
 input {
   margin-bottom: 0.6rem;
+  color: var(--colour1);
+}
+
+input:focus {
+  background-color: var(--colour4);
 }
 
 textarea {
   margin-bottom: 0.6rem;
+  color: var(--colour1);
+}
+
+textarea:focus {
+  background-color: var(--colour4);
 }
 
 .mandatory {
@@ -353,7 +370,10 @@ footer a:hover {
     transform: rotate(-45deg);
   }
   /*  ------------- end of toggle menu ------------- */
-
+  /*  ------------- Header ------------- */
+  #landing-hero {
+    width: 200%;
+  }
   /*  ------------- Footer ------------- */
   footer a {
     display: flex;

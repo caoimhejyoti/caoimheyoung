@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Miltonian+Tattoo&family=Miltonian&family=Rock+Salt&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Miltonian&family=Miltonian+Tattoo&family=Playfair+Display:ital,wght@0,500;1,500&family=Rock+Salt&display=swap"
       rel="stylesheet"
     />
     <title>Caoimhe Young</title>
@@ -47,7 +47,7 @@
       <!-- About Me -->
       <section id="about">
         <!-- headshot -->
-        <img src="assets/images/profile_images/IMG_4007.png" ari />
+        <!-- <img src="assets/images/profile_images/IMG_4007.png" ari /> -->
         <div>
           <h2>Who is Caoimhe?</h2>
           <p>
@@ -111,6 +111,7 @@
             type="text"
             id="fname"
             name="fname"
+            spellcheck="true"
             required
             aria-required="true"
           />
@@ -119,16 +120,18 @@
             type="text"
             id="sname"
             name="sname"
+            spellcheck="true"
             required
             aria-required="true"
           />
           <label for="company">Company</label>
-          <input type="text" id="company" name="company" />
+          <input type="text" id="company" name="company" spellcheck="true" />
           <label for="email">Email <span class="mandatory">*</span></label>
           <input
             type="email"
             id="email"
             name="email"
+            spellcheck="true"
             required
             aria-required="true"
           />
@@ -136,6 +139,7 @@
           <textarea
             id="message"
             name="message"
+            spellcheck="true"
             required
             aria-required="true"
           ></textarea>
