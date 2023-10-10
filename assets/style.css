@@ -189,15 +189,32 @@ nav a {
 /* ------------------Main------------------ */
 /* ------------------Hero------------------ */
 #landing-hero {
+  display: flex;
   background-color: var(--colour1);
-  background-image: url("assets/images/portfolio_backgrnd.png");
 }
 /* ------------------About------------------ */
 
 /* ------------------end of about------------------ */
 
 /* ------------------Projects------------------ */
+.all-projects {
+  margin: 0 1.6rem 1.6rem 1.6rem;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--colour2);
+  color: var(--colour5);
+  border-radius: 0.4rem;
+}
 
+.project-card {
+  margin: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 /* ------------------end of projects------------------ */
 
 /* ------------------Contact------------------ */
