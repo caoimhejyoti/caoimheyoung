@@ -209,15 +209,18 @@ nav a {
 /* ------------------end of about------------------ */
 
 /* ------------------Projects------------------ */
+#projects {
+  padding: 1.6rem;
+  background-color: var(--colour2);
+}
+
 .all-projects {
   width: 100%;
   margin: 1.6rem 0;
-  padding: 0.6rem;
+  /* padding: 0.6rem; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: var(--colour2);
-  color: var(--colour5);
 }
 
 .project-card {
@@ -231,15 +234,15 @@ nav a {
   border-radius: 0.4rem;
 }
 
-/* .project-img {
-  width: 50px;
-} */
+.project-img {
+  width: 250px;
+}
 
 /* ------------------end of projects------------------ */
 
 /* ------------------Contact------------------ */
 #contact {
-  margin: 0 1.6rem 1.6rem 1.6rem;
+  margin: 1.6rem;
   padding: 0.6rem;
   display: flex;
   flex-direction: column;
