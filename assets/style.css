@@ -1,3 +1,4 @@
+/* ------------------ GLOBAL VARIABLES ------------------ */
 :root {
   /* ------------------LAYOUT------------------ */
   --base-padding: 20px;
@@ -31,21 +32,19 @@
 
   --h1: 5.441rem;
 }
+/* ------------------ END OF GLOBAL VARIABLES ------------------ */
 
-/* ------------------Reset/base CSS code and style guide------------------*/
 /* TODO: look at tidying up reset code */
-
+/* ------------------Reset/base CSS code and style guide------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 body {
   background-color: var(--colour1);
   color: var(--text);
@@ -56,7 +55,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-
 img,
 picture,
 video,
@@ -65,20 +63,17 @@ svg {
   max-width: 100%;
   display: block;
 }
-
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-
 h1 {
   color: var(--colour3);
   font-family: var(--font-3);
   font-size: 3.052rem;
 }
-
 h2 {
   font-family: var(--font-2);
   font-size: 2.441rem;
@@ -103,12 +98,12 @@ h6 {
 .text_small {
   font-size: 0.512rem;
 }
-
 a {
   font-family: var(--font-3);
 }
+/* ------------------ end of resent/stye guide ------------------ */
 
-/* ------------------Button Styling------------------ */
+/* ------------------ Button Styling ------------------ */
 button,
 .button {
   padding: 0.8rem;
@@ -121,7 +116,6 @@ button,
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 .button-danger {
   padding: 0.8rem;
   background-color: var(--colour2);
@@ -144,6 +138,26 @@ button,
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.button-download {
+  padding: 0.8rem;
+  background-color: var(--colour1);
+  color: var(--colour5);
+  border: none;
+  border-radius: 0.4rem;
+  font-family: var(--font-2);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button-download:hover {
+  background-color: var(--colour3);
+  color: var(--colour1);
+}
+/* TODO: look at sorting visited links */
+/* .button-download:visited {
+  background-color: var(--colour1);
+  color: var(--colour3);
+} */
 
 .button-project {
   margin-top: 0.6rem;
@@ -157,8 +171,13 @@ button,
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.button-project:hover {
+  background-color: var(--colour1);
+  color: var(--colour3);
+}
+/* ------------------ end of buttons ------------------ */
 
-/* ------------------Header------------------ */
+/* ------------------ Header ------------------ */
 header {
   width: 100%;
   /* TODO: needs to be fixed when scrolled but not at top... */
@@ -169,46 +188,47 @@ header {
   justify-content: space-between;
   background-color: var(--colour5);
 }
-
 header a {
   display: inline-block;
   color: var(--colour1);
   font-size: 1.6rem;
   text-decoration: none;
 }
-
 header a:active {
   color: var(--colour2);
   font-weight: bold;
   text-decoration: none;
 }
-
 #logo {
   margin: 0.6rem;
   height: 8vh;
 }
-
 .openmenu {
   display: none;
 }
-
 nav {
   display: flex;
   align-items: center;
   float: right;
 }
-
 nav a {
   padding: var(--base-padding);
 }
-/* ------------------ end of header ------------------ */
+/* ------------------ END OF HEADER ------------------ */
 
 /* ------------------ Main ------------------ */
 /* ------------------ Hero ------------------ */
 #landing-hero {
   display: flex;
+  /* flex-direction: column; */
   background-color: var(--colour1);
 }
+#landing-hero img {
+  width: 50%;
+  height: auto;
+}
+/* ------------------ end of hero ------------------ */
+
 /* ------------------ About ------------------ */
 #about {
   margin: 1.6rem;
@@ -220,15 +240,18 @@ nav a {
   color: var(--colour1);
   border-radius: 0.4rem;
 }
-
 #about-headshot {
-  height: 20em;
-  /* width: 200px; */
+  margin: 1.6rem 0rem;
   border-radius: 50%;
 }
-
+#about p {
+  margin-bottom: 1.6rem;
+}
+#about h3 {
+  margin-top: 1.6rem;
+}
 .language {
-  margin: 0.6.rem;
+  margin: 0.6rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -240,7 +263,6 @@ nav a {
   background-color: var(--colour3);
   border-radius: 0.4rem;
 }
-
 /* ------------------ end of about ------------------ */
 
 /* ------------------ Projects ------------------ */
@@ -248,16 +270,13 @@ nav a {
   padding: 1.6rem;
   background-color: var(--colour2);
 }
-
 .all-projects {
   width: 100%;
   margin: 1.6rem 0;
-  /* padding: 0.6rem; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .project-card {
   margin: 1.6rem;
   padding: 0.6rem;
@@ -268,11 +287,9 @@ nav a {
   background-color: var(--colour5);
   border-radius: 0.4rem;
 }
-
 .project-img {
   width: 250px;
 }
-
 /* ------------------ end of projects ------------------ */
 
 /* ------------------ Contact ------------------ */
@@ -281,12 +298,10 @@ nav a {
   padding: 0.6rem;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   background-color: var(--colour3);
   color: var(--colour1);
   border-radius: 0.4rem;
 }
-
 form {
   padding: 1.6rem;
   width: 90%;
@@ -294,36 +309,30 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 input {
   margin-bottom: 0.6rem;
   color: var(--colour1);
 }
-
 input:focus {
   background-color: var(--colour4);
 }
-
 textarea {
   margin-bottom: 0.6rem;
   color: var(--colour1);
 }
-
 textarea:focus {
   background-color: var(--colour4);
 }
-
 .mandatory {
   color: var(--colour2);
 }
-
 /* TODO: look at positioning - needs to be centered.  */
 form #formbtn {
   width: 50%;
   align-content: center;
 }
 /* ------------------end of contact------------------ */
-/* ------------------end of main------------------ */
+/* ------------------END OF MAIN------------------ */
 
 /* ------------------Footer------------------ */
 footer {
@@ -335,25 +344,21 @@ footer {
   background-color: var(--colour11);
   color: var(--colour15);
 }
-
 #footer-logo {
   height: 5vh;
   display: inline-block;
 }
-
 #footer_links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 footer a {
   padding: 0.6rem;
   color: var(--colour15);
-  font-family: var(--font-);
+  font-family: var(--font-2);
   text-decoration: none;
 }
-
 footer a:hover {
   color: var(--colour3);
 }
@@ -391,7 +396,6 @@ footer a:hover {
     display: flex;
     flex-direction: column;
   }
-
   .checkbox .hamburger-lines {
     margin: 10px;
     padding: 0;
@@ -405,7 +409,6 @@ footer a:hover {
     right: 20px;
     z-index: 2;
   }
-
   .checkbox .hamburger-lines .line {
     height: 4px;
     width: 100%;
@@ -419,11 +422,9 @@ footer a:hover {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
   }
-
   .checkbox .hamburger-lines .line2 {
     transition: transform 0.2s ease-in-out;
   }
-
   .checkbox .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
@@ -434,21 +435,20 @@ footer a:hover {
     background: var(--colour1);
     transform: rotate(45deg);
   }
-
   .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     background: var(--colour1);
     transform: scaleY(0);
   }
-
   .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     background: var(--colour1);
     transform: rotate(-45deg);
   }
+
   /*  ------------- end of toggle menu ------------- */
   /*  ------------- Header ------------- */
-  #landing-hero {
+  /* #landing-hero {
     width: 200%;
-  }
+  } */
   /*  ------------- Footer ------------- */
   footer a {
     display: flex;
