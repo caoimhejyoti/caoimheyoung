@@ -219,13 +219,18 @@ nav a {
 /* ------------------ Main ------------------ */
 /* ------------------ Hero ------------------ */
 #landing-hero {
+  height: 85vh;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   background-color: var(--colour1);
 }
+#landing-hero h1 {
+  margin-left: 0.6em;
+}
 #landing-hero img {
-  width: 50%;
-  height: auto;
+  max-height: 85vh;
+  /* max-width: 85vw; */
+  clip-path: circle(50% at 50%);
 }
 /* ------------------ end of hero ------------------ */
 
