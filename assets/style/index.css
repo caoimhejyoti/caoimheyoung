@@ -291,6 +291,7 @@ nav a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .project-card {
   margin: 1.6rem;
