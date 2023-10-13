@@ -138,9 +138,7 @@ button,
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-/* FIXME: margin on button not working? */
 .button-download {
-  margin-bottom: 0.6rem;
   padding: 0.8rem;
   background-color: var(--colour1);
   color: var(--colour5);
@@ -258,7 +256,7 @@ nav a {
   margin-top: 1.6rem;
 }
 #about h4 {
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.6rem;
 }
 .language {
   margin: 0.6rem;
@@ -272,6 +270,9 @@ nav a {
   padding: 0.6rem;
   background-color: var(--colour3);
   border-radius: 0.4rem;
+}
+.download {
+  margin-bottom: 0.6rem;
 }
 /* ------------------ end of about ------------------ */
 
