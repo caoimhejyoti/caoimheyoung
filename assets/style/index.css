@@ -203,6 +203,7 @@ header a:active {
 #logo {
   margin: 0.6rem;
   height: 8vh;
+  border-radius: 50%;
 }
 .openmenu {
   display: none;
