@@ -70,8 +70,8 @@ select {
   font: inherit;
 }
 h1 {
-  color: var(--colour3);
-  font-family: var(--font-3);
+  color: var(--colour5);
+  font-family: var(--font-2);
   font-size: 3.052rem;
 }
 h2 {
@@ -203,6 +203,7 @@ header a:active {
 #logo {
   margin: 0.6rem;
   height: 8vh;
+  border-radius: 50%;
 }
 .openmenu {
   display: none;
@@ -220,19 +221,24 @@ nav a {
 /* ------------------ Main ------------------ */
 /* ------------------ Hero ------------------ */
 #landing-hero {
+  margin: 1.6rem;
   height: 85vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background-color: var(--colour1);
 }
 #landing-hero h1 {
-  margin-left: 0.6em;
+  margin: 0.6em;
 }
-#landing-hero img {
-  max-height: 85vh;
-  /* max-width: 85vw; */
-  clip-path: circle(50% at 50%);
-}
+/* working img css */
+/* #landing-hero img {
+  /* max-height: 85vh; */
+/* max-width: 85vw; */
+/* z-index: -1; */
+/* clip-path: circle(50% at 50%); 
+} */
 /* ------------------ end of hero ------------------ */
 
 /* ------------------ About ------------------ */
