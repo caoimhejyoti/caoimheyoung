@@ -221,13 +221,13 @@ nav a {
 /* ------------------ Main ------------------ */
 /* ------------------ Hero ------------------ */
 #landing-hero {
-  margin: 1.6rem;
   height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background-color: var(--colour1);
+  text-align: center;
 }
 #landing-hero h1 {
   margin: 0.6em;
