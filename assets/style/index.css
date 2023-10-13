@@ -276,11 +276,11 @@ nav a {
 /* ------------------ end of about ------------------ */
 
 /* ------------------ Projects ------------------ */
-#projects {
+.projects {
   padding: 1.6rem;
   background-color: var(--colour2);
 }
-#projects p {
+.projects p {
   padding-bottom: 1.6rem;
 }
 .all-projects {
@@ -347,10 +347,10 @@ form #formbtn {
   width: 50%;
   align-content: center;
 }
-/* ------------------end of contact------------------ */
-/* ------------------END OF MAIN------------------ */
+/* ------------------ end of contact ------------------ */
+/* ------------------ END OF MAIN ------------------ */
 
-/* ------------------Footer------------------ */
+/* ------------------ Footer ------------------ */
 footer {
   padding-left: 0.5rem;
   display: flex;
@@ -378,9 +378,9 @@ footer a {
 footer a:hover {
   color: var(--colour3);
 }
-/* ------------------End of footer------------------ */
+/* ------------------ End of footer ------------------ */
 
-/* ------------------Media Queries------------------ */
+/* ------------------ Media Queries ------------------ */
 @media screen and (max-width: 830px) {
   /* ---- toggle menu for nav on smaller devices ---- */
 
@@ -473,3 +473,48 @@ footer a:hover {
     justify-content: space-around;
   }
 }
+
+/* ------------------ PROJECT PAGES ------------------ */
+/* ------------------ Out and About ------------------ */
+.out-and-about {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  background-color: var(--colour2);
+}
+.out-and-about h1 {
+  margin: 0.6rem 0;
+  text-align: center;
+  color: var(--colour5);
+}
+.out-and-about p {
+  margin-bottom: 0.6rem;
+}
+.out-and-about img {
+  margin: 0.6rem;
+  border-radius: 0.4rem;
+}
+.project-overview {
+  margin: 0.6rem;
+  padding: 0.4rem;
+  background-color: var(--colour5);
+  color: var(--colour1);
+  border-radius: 0.4rem;
+}
+.project-extras {
+  margin: 0.6rem;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colour1);
+  color: var(--colour5);
+  border-radius: 0.4rem;
+}
+
+.button-container {
+  margin: 0.6rem 0;
+  align-self: center;
+}
+
+/* ------------------ END OF OUT AND ABOUT ------------------ */
