@@ -284,6 +284,10 @@ nav a {
 /* ------------------ end of about ------------------ */
 
 /* ------------------ Projects ------------------ */
+#all-projects {
+  padding: 1.6rem;
+  background-color: var(--colour2);
+}
 .projects {
   padding: 1.6rem;
   background-color: var(--colour2);
@@ -291,7 +295,7 @@ nav a {
 .projects p {
   padding-bottom: 1.6rem;
 }
-.all-projects {
+.all-project-cards {
   width: 100%;
   margin-bottom: 0.6rem;
   display: flex;
