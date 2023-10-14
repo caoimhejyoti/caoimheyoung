@@ -34,7 +34,6 @@
 }
 /* ------------------ END OF GLOBAL VARIABLES ------------------ */
 
-/* TODO: look at tidying up reset code */
 /* ------------------Reset/base CSS code and style guide------------------*/
 * {
   margin: 0;
@@ -145,6 +144,9 @@ button,
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.button-success:hover {
+  border: var(--colour5) solid 0.2rem;
+}
 .button-download {
   padding: 0.8rem;
   background-color: var(--colour1);
@@ -160,7 +162,7 @@ button,
   background-color: var(--colour3);
   color: var(--colour1);
 }
-/* TODO: look at sorting visited links */
+/* NOTE: look at sorting visited links */
 /* .button-download:visited {
   background-color: var(--colour1);
   color: var(--colour3);
@@ -185,10 +187,9 @@ button,
 /* ------------------ end of buttons ------------------ */
 
 /* ------------------ Header ------------------ */
+/* NOTE: look at fixing when scrolled but not at top... */
 header {
   width: 100%;
-  /* TODO: needs to be fixed when scrolled but not at top... */
-  /* position: fixed; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -201,7 +202,9 @@ header a {
   font-size: 1.6rem;
   text-decoration: none;
 }
-header a:active {
+header a:hover,
+header a:active,
+header a:focus {
   color: var(--colour2);
   font-weight: bold;
   text-decoration: none;
@@ -211,7 +214,6 @@ header a:active {
   height: 8vh;
   border-radius: 50%;
 }
-
 /* ---- toggle hamburger menu for nav on larger devices ---- */
 .menu {
   display: none;
@@ -240,8 +242,8 @@ header a:active {
   display: flex;
   flex-direction: column;
 }
-.checkbox .hamburger-lines {
-  margin: 10px;
+.hamburger-lines {
+  margin: 0px;
   padding: 0;
   height: 26px;
   width: 32px;
@@ -253,7 +255,7 @@ header a:active {
   right: 20px;
   z-index: 2;
 }
-.checkbox .hamburger-lines .line {
+.line {
   height: 4px;
   width: 100%;
   display: block;
@@ -261,14 +263,14 @@ header a:active {
   border-radius: 10px;
 }
 /* -- transform hamburger lines -- */
-.checkbox .hamburger-lines .line1 {
+.line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
-.checkbox .hamburger-lines .line2 {
+.line2 {
   transition: transform 0.2s ease-in-out;
 }
-.checkbox .hamburger-lines .line3 {
+.line3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
@@ -460,8 +462,8 @@ footer a:hover {
   margin-bottom: 0.6rem;
 }
 .project-overview {
-  /* margin: 0.6rem; */
-  padding: 0.4rem;
+  margin: 1.6rem;
+  padding: 0.6rem;
   background-color: var(--colour5);
   color: var(--colour1);
   border-radius: 0.4rem;
@@ -482,8 +484,8 @@ footer a:hover {
   border-radius: 0.4rem;
 }
 .project-extras {
-  /* margin: 0.6rem; */
-  padding: 0.4rem;
+  margin: 1.6rem;
+  padding: 0.6rem;
   display: flex;
   flex-direction: column;
   background-color: var(--colour5);
@@ -506,16 +508,12 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* float: right; */
   }
   nav a {
     padding: var(--base-padding);
   }
-
-  header div.hamburger-lines {
-    background-color: pink;
-    /* display: none; */
-    opacity: 0;
+  .hamburger-lines {
+    display: none;
   }
 }
 /* ------ query for constrained-contianer in desktop ------ */

@@ -8,7 +8,7 @@
 
 ---
 
-[About](#about) ✦ [Wireframe](#wireframe) ✦ [Resources](#resources) ✦ [License](#license) ✦ [Contact](#contact)
+[About](#about) ✦ [Wireframe](#wireframe) ✦ [Future Developments](#future-developments) ✦ [Resources](#resources) ✦ [License](#license) ✦ [Contact](#contact)
 
 ---
 
@@ -22,8 +22,23 @@ Version 1 created with purely HTML and CSS - October 2023.
 
 ![Screenshot of original wireframe](assets/images/readme/wireframe_screenshot.png)
 
-Original wireframe available here:
-https://caoimhejyoti.github.io/caoimheyoung/assets/images/readme/portfolio_wireframe
+Original wireframe available [here](https://caoimhejyoti.github.io/caoimheyoung/assets/images/readme/portfolio_wireframe.pdf).
+
+## Future Developments
+
+As I progress in my coding career, I will bring my projects to this proposal.
+
+In terms of the development of this site, I would like to continue to work with accessibility as a high priority.
+
+While creating this site, I focused on the colour contrast, font sizes and ensuring alt text has been provided for all elements that require them.
+
+Key accessibility things that need I would like to resolve can be see below. I hope to gradually tick them off.
+
+1. Focus, Active and Hover CSS for my menus when on a small device.
+2. Look further into aria attributes and work with these as appropriate.
+3. Look at adding an expandable container for users to chose whether they want to see every language I have worked with.
+
+I am still learning about accessible design so I welcome all feedback. If you have experienced any access restrictions, please let me know and I will work to reduce these in the future.
 
 ## Resources
 
