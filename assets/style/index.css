@@ -506,16 +506,13 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* float: right; */
   }
   nav a {
     padding: var(--base-padding);
   }
 
-  header div.hamburger-lines {
-    background-color: pink;
-    /* display: none; */
-    opacity: 0;
+  .checkbox .hamburger-lines {
+    display: none;
   }
 }
 /* ------ query for constrained-contianer in desktop ------ */
