@@ -95,12 +95,16 @@ h6 {
   color: var(--color3);
   font-size: 0.8rem;
 }
+p {
+  padding: 0.6rem 0;
+}
 .text_small {
   font-size: 0.512rem;
 }
 a {
   font-family: var(--font-3);
 }
+
 /* ------------------ end of resent/stye guide ------------------ */
 
 /* ------------------ Button Styling ------------------ */
@@ -233,17 +237,10 @@ nav a {
 #landing-hero h1 {
   margin: 0.6em;
 }
-/* working img css */
-/* #landing-hero img {
-  /* max-height: 85vh; */
-/* max-width: 85vw; */
-/* z-index: -1; */
-/* clip-path: circle(50% at 50%); 
-} */
 /* ------------------ end of hero ------------------ */
 
 /* ------------------ About ------------------ */
-#about {
+.about {
   margin: 1.6rem;
   padding: 0.6rem;
   display: flex;
@@ -253,12 +250,12 @@ nav a {
   color: var(--colour1);
   border-radius: 0.4rem;
 }
+.about-text {
+  padding: 1.6rem;
+}
 #about-headshot {
   margin: 1.6rem 0rem;
   border-radius: 50%;
-}
-#about p {
-  margin-bottom: 1.6rem;
 }
 #about h3 {
   margin-top: 1.6rem;
@@ -280,21 +277,18 @@ nav a {
   border-radius: 0.4rem;
 }
 .download {
-  margin-bottom: 0.6rem;
+  margin: 0.6rem 0;
 }
 /* ------------------ end of about ------------------ */
 
 /* ------------------ Projects ------------------ */
-#all-projects {
+.all-projects {
   padding: 1.6rem;
   background-color: var(--colour2);
 }
 .projects {
   padding: 1.6rem;
   background-color: var(--colour2);
-}
-.projects p {
-  padding-bottom: 1.6rem;
 }
 .all-project-cards {
   width: 100%;
@@ -320,20 +314,17 @@ nav a {
 /* ------------------ end of projects ------------------ */
 
 /* ------------------ Contact ------------------ */
-#contact {
+.contact {
   margin: 1.6rem;
-  padding: 0.6rem;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   background-color: var(--colour3);
   color: var(--colour1);
   border-radius: 0.4rem;
 }
-#contact p {
-  padding-bottom: 1.6rem;
-}
 form {
-  padding: 0.6rem;
+  padding: 0.6rem 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -484,15 +475,10 @@ footer a:hover {
 }
 
 /* FIXME: need to move to center */
-@media screen and (min-width: 800px) {
-  #contact {
-    margin: 1.6rem auto;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--colour3);
-    color: var(--colour1);
-    border-radius: 0.4rem;
+@media screen and (min-width: 900px) {
+  .constrained-container {
+    max-width: 870px;
+    margin: 1rem auto;
   }
 }
 
@@ -548,3 +534,7 @@ footer a:hover {
   align-self: center;
 }
 /* ------------------ END OF OUT AND ABOUT ------------------ */
+
+.constrained-container {
+  padding: 1.6rem;
+}
