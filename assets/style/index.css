@@ -209,17 +209,95 @@ header a:active {
   height: 8vh;
   border-radius: 50%;
 }
-.openmenu {
+
+/* ---- toggle menu for nav on smaller devices ---- */
+
+.menu {
   display: none;
 }
-nav {
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.openmenu {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  cursor: pointer;
+  /* -- hides checkbox -- */
+  margin: 10px;
+  opacity: 0;
+}
+/* -- opens menu -- */
+.checkbox input[type="checkbox"]:checked ~ .menu {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.checkbox .hamburger-lines {
+  margin: 10px;
+  padding: 0;
+  height: 26px;
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+.checkbox .hamburger-lines .line {
+  height: 4px;
+  width: 100%;
+  display: block;
+  background: var(--colour1);
+  border-radius: 10px;
+}
+
+/* -- transform hamburger lines -- */
+.checkbox .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.checkbox .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+.checkbox .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* -- change hamburger when checked -- */
+.checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  background: var(--colour1);
+  transform: rotate(45deg);
+}
+.checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  background: var(--colour1);
+  transform: scaleY(0);
+}
+.checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  background: var(--colour1);
+  transform: rotate(-45deg);
+}
+
+/* .openmenu {
+  display: none;
+} */
+/* nav {
   display: flex;
   align-items: center;
   float: right;
-}
-nav a {
+} */
+/* nav a {
   padding: var(--base-padding);
-}
+} */
 /* ------------------ END OF HEADER ------------------ */
 
 /* ------------------ Main ------------------ */
@@ -382,7 +460,7 @@ footer a:hover {
 @media screen and (max-width: 830px) {
   /* ---- toggle menu for nav on smaller devices ---- */
 
-  .menu {
+  /* .menu {
     display: none;
   }
   .checkbox {
@@ -399,18 +477,18 @@ footer a:hover {
     z-index: 5;
     cursor: pointer;
     /* -- hides checkbox -- */
-    margin: 10px;
-    opacity: 0;
-  }
+  /* margin: 10px;
+    opacity: 0; */
+  /* } */
 
   /* -- opens menu -- */
-  .checkbox input[type="checkbox"]:checked ~ .menu {
+  /* .checkbox input[type="checkbox"]:checked ~ .menu {
     margin: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-  }
-  .checkbox .hamburger-lines {
+  } */
+  /* .checkbox .hamburger-lines {
     margin: 10px;
     padding: 0;
     height: 26px;
@@ -422,17 +500,17 @@ footer a:hover {
     top: 20px;
     right: 20px;
     z-index: 2;
-  }
-  .checkbox .hamburger-lines .line {
+  } */
+  /* .checkbox .hamburger-lines .line {
     height: 4px;
     width: 100%;
     display: block;
     background: var(--colour1);
     border-radius: 10px;
-  }
+  } */
 
   /* -- transform hamburger lines -- */
-  .checkbox .hamburger-lines .line1 {
+  /* .checkbox .hamburger-lines .line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
   }
@@ -442,10 +520,10 @@ footer a:hover {
   .checkbox .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
-  }
+  } */
 
   /* -- change hamburger when checked -- */
-  .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  /* .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     background: var(--colour1);
     transform: rotate(45deg);
   }
@@ -456,7 +534,7 @@ footer a:hover {
   .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     background: var(--colour1);
     transform: rotate(-45deg);
-  }
+  } */
 
   /*  ------------- end of toggle menu ------------- */
   /*  ------------- Header ------------- */
@@ -469,6 +547,27 @@ footer a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .openmenu {
+    display: none;
+  }
+  nav.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* float: right; */
+  }
+  nav a {
+    padding: var(--base-padding);
+  }
+
+  header div.hamburger-lines {
+    background-color: pink;
+    /* display: none; */
+    opacity: 0;
   }
 }
 
