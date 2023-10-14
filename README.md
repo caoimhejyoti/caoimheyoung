@@ -1,6 +1,6 @@
 # Caoimhe Young HTML & CSS Portfolio
 
-<!-- add link here -->
+## https://caoimhejyoti.github.io/caoimheyoung/
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
@@ -8,7 +8,7 @@
 
 ---
 
-[About](#about) ✦ [Wireframe](#wireframe) ✦ [Future Developments](#future-developments) ✦ [Resources](#resources) ✦ [License](#license) ✦ [Contact](#contact)
+[About](#about) ✦ [Wireframe](#wireframe) ✦ [Resources](#resources) ✦ [License](#license) ✦ [Contact](#contact)
 
 ---
 
@@ -16,19 +16,22 @@
 
 Personal Portfolio - created as part of She Codes Australia Plus Program, October 2023.
 
+Version 1 created with purely HTML and CSS - October 2023.
+
 ## Wireframe
 
-<!-- add wireframe images -->
+![Screenshot of original wireframe](assets/images/readme/wireframe_screenshot.png)
 
-## Future Developements
-
-<!-- future ideas? -->
+Original wireframe available here:
+https://caoimhejyoti.github.io/caoimheyoung/assets/images/readme/portfolio_wireframe
 
 ## Resources
 
 https://webaim.org/resources/contrastchecker/
 
-<!-- add ressources as site is developed. -->
+https://typescale.com/
+
+http://colormind.io/bootstrap/
 
 ## License
 
