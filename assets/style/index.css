@@ -486,6 +486,7 @@ footer a:hover {
 /* FIXME: need to move to center */
 @media screen and (min-width: 800px) {
   #contact {
+    margin: 1.6rem auto;
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -496,7 +497,6 @@ footer a:hover {
 }
 
 /* ------------------ PROJECT PAGES ------------------ */
-/* ------------------ Out and About ------------------ */
 .project-single {
   display: flex;
   flex-direction: column;
@@ -547,5 +547,4 @@ footer a:hover {
   margin: 0.6rem 0;
   align-self: center;
 }
-
 /* ------------------ END OF OUT AND ABOUT ------------------ */
