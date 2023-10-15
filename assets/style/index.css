@@ -184,6 +184,18 @@ button,
   background-color: var(--colour1);
   color: var(--colour3);
 }
+.button-soon {
+  margin-top: 0.6rem;
+  padding: 0.8rem;
+  background-color: var(--colour1);
+  color: var(--colour5);
+  border: none;
+  border-radius: 0.4rem;
+  font-family: var(--font-2);
+  text-decoration: none;
+  cursor: default;
+}
+
 /* ------------------ end of buttons ------------------ */
 
 /* ------------------ Header ------------------ */
