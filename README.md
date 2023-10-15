@@ -8,7 +8,7 @@
 
 ---
 
-[About](#about) ✦ [Wireframe](#wireframe) ✦ [Future Developments](#future-developments) ✦ [Resources](#resources) ✦ [License](#license) ✦ [Contact](#contact)
+[About](#about) ✦ [Wireframe](#wireframe) ✦ [Responsiveness](#responsiveness) ✦ [Future Developments](#future-developments) ✦ [Resources](#resources) ✦ [License](#license) ✦ [Contact](#contact)
 
 ---
 
@@ -23,6 +23,72 @@ Version 1 created with purely HTML and CSS - October 2023.
 ![Screenshot of original wireframe](assets/images/readme/wireframe_screenshot.png)
 
 Original wireframe available [here](https://caoimhejyoti.github.io/caoimheyoung/assets/images/readme/portfolio_wireframe.pdf).
+
+## Responsiveness
+
+This portfolio is fully responsive to various device sizes.
+To display this, I have used the Responsivley App to demonstrate several devices at once. The devices i am deomstrating are:
+
+- iPhone12 (390x844px)
+- iPad (768x1024px)
+- MacBookPro (1440x900px)
+- Samsung Galaxy S20 Ultra (412x915px)
+
+Further details of this app can be found in [Resources](#resources).
+
+### Main Page
+
+![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Hero" section of the main portfolio page.](assets/images/readme/responsive-screenshots/portfolio-landing.png)
+
+This image shows the "Hero" section of the main portfolio page.
+
+![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Who is Caoimhe" section of the main portfolio page. ](assets/images/readme/responsive-screenshots/portfolio-about.png)
+
+This image shows the "Who is Caoimhe" section of the main portfolio page.
+
+![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Languages and Frameworks Used" section of the main portfolio page. ](assets/images/readme/responsive-screenshots/portfolio-langs.png)
+
+This image shows the "Languages and Frameworks Used" section of the main portfolio page.
+
+![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Previous Projects" section of the main portfolio page. ](assets/images/readme/responsive-screenshots/portfolio-projects.png)
+
+This image shows the "Previous Projects" section of the main portfolio page.
+
+![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Contact"section of the main portfolio page. ](assets/images/readme/responsive-screenshots/portfolio-contact.png)
+
+This image shows the "Contact"section of the main portfolio page.
+
+### Out and About Project Page
+
+![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Hero" section of the Out and About Project page. ](assets/images/readme/responsive-screenshots/portfolio-out-and-about-landing.png)
+
+This image shows the "Hero" section of the Out and About Project page.
+
+![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Project Overview" section of the Out and About Project page.](assets/images/readme/responsive-screenshots/portfolio-out-and-about-overview.png)
+
+This image shows the "Project Overview" section of the Out and About Project page.
+
+![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Languages and Frameworks used" section of the Out and About Project page. The languages are expanded and visible in this image.](assets/images/readme/responsive-screenshots/portfolio-out-and-about-langs-expanded.png)
+
+This image shows the "Languages and Frameworks used" section of the Out and About Project page. The languages are expanded and visible in this image.
+
+![Screen shot of Portfolio in four various sizes, listed about. This image shows the "Languages and Frameworks used" section of the Out and About Project page. The languages are condensed in this image.](assets/images/readme/responsive-screenshots/portfolio-out-and-about-seemore.png)
+
+This image shows the "Languages and Frameworks used" section of the Out and About Project page. The languages are condensed in this image.
+
+### Buddy Up Project Page
+
+![Screen shot of Portfolio in four various sizes, listed about. This image shows the "Hero" section of the Buddy Up Project page. ](assets/images/readme/responsive-screenshots/portfolio-buddy-up-landing.png)
+
+This image shows the "Hero" section of the Buddy Up Project page.
+
+![Screen shot of Portfolio in four various sizes, listed about. This image shows the Project Overview and "Want to know more?" section of the Buddy Up Project page. ](assets/images/readme/responsive-screenshots/portfolio-buddy-up-overview.png)
+
+This image shows the Project Overview and "Want to know more?" section of the Buddy Up Project page.
+
+![Screen shot of Portfolio in four various sizes, listed about. This image shows the "Languages and Frameworks used" section of the Buddy Up Project page.](assets/images/readme/responsive-screenshots/portfolio-buddy-up-seemore.png)
+
+This image shows the "Languages and Frameworks used" section of the Buddy Up Project page.
 
 ## Future Developments
 
@@ -47,6 +113,8 @@ https://webaim.org/resources/contrastchecker/
 https://typescale.com/
 
 http://colormind.io/bootstrap/
+
+https://responsively.app/
 
 ## License
 
