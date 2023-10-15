@@ -102,6 +102,10 @@ Further details of this app can be found in [Resources](#resources).
 
 ### Main Page
 
+![Gif showing Buddy Up project page across four various sizes, as listed above.](assets/images/readme/gifs/responsive-index.gif)
+
+#### Breakdown screenshots
+
 ![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Hero" section of the main portfolio page.](assets/images/readme/responsive-screenshots/portfolio-landing.png)
 
 This image shows the "Hero" section of the main portfolio page.
@@ -124,6 +128,10 @@ This image shows the "Contact"section of the main portfolio page.
 
 ### Out and About Project Page
 
+![Gif showing Buddy Up project page across four various sizes, as listed above.](assets/images/readme/gifs/responsive-oaa.gif)
+
+#### Breakdown screenshots
+
 ![Screen shot of Portfolio landing page in four various sizes, listed about. This image shows the "Hero" section of the Out and About Project page. ](assets/images/readme/responsive-screenshots/portfolio-out-and-about-landing.png)
 
 This image shows the "Hero" section of the Out and About Project page.
@@ -141,6 +149,10 @@ This image shows the "Languages and Frameworks used" section of the Out and Abou
 This image shows the "Languages and Frameworks used" section of the Out and About Project page. The languages are condensed in this image.
 
 ### Buddy Up Project Page
+
+![Gif showing Buddy Up project page across four various sizes, as listed above.](assets/images/readme/gifs/responive-bu.gif)
+
+#### Breakdown screenshots
 
 ![Screen shot of Portfolio in four various sizes, listed about. This image shows the "Hero" section of the Buddy Up Project page. ](assets/images/readme/responsive-screenshots/portfolio-buddy-up-landing.png)
 
