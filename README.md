@@ -34,6 +34,8 @@ Within the site, I have two images of myself, one more recent than the other! I 
 
 My skills are listed within a collapsible container so that users are able to skip this if they do not need the information.
 
+![Mouse clicks the marker for my languages container expanding it to show the various logos of langages and frameworks I have worked with.](assets/images/readme/gifs/lang-expand.gif)
+
 I have also provided users with the option to download my resume.
 
 My project section lists three projects, two which link to their own indepth page. I also have a project which has a "coming soon!" button to demonstrate the button options I have designed.
@@ -67,6 +69,10 @@ Currently my accessibility additions include:
 - Active, Hover and Focus states
 - Colour contrast that have a minimun WCAG standarf of AA
 - All typography uses the base size of 16px
+
+![Mouse hovers over "view my resume" button showing a colour change from green to yellow.](assets/images/readme/gifs/download-button.gif)
+
+![Mouse clicks into contact form to show the active state. User tabs through to show all inputs in active state.](assets/images/readme/gifs/contact-form.gif)
 
 More information regarding Accessibility and my next steps can be found [here](#future-developments).
 
